@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Link, Routes } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import "./App.css";
@@ -19,10 +18,16 @@ function App() {
         <Layout>
           <div className="routes">
             <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-              <Route path="/crypto/:coinId" element={<CryptoDetails />} />
-              <Route path="/news" element={<News />} />
+              <Route path="/CryptoTracker/" element={<Homepage />} />
+              <Route
+                path="/CryptoTracker/cryptocurrencies"
+                element={<Cryptocurrencies />}
+              />
+              <Route
+                path="/CryptoTracker/crypto/:coinId"
+                element={<CryptoDetails />}
+              />
+              <Route path="/CryptoTracker/news" element={<News />} />
             </Routes>
           </div>
         </Layout>

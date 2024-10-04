@@ -39,7 +39,7 @@ function Cryptocurrencies({ simplified }: { simplified?: boolean }) {
             className="crypto-card"
             key={currency.uuid}
           >
-            <Link to={`/crypto/${currency.uuid}`}>
+            <Link to={`/CryptoTracker/crypto/${currency.uuid}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
                 extra={<img className="crypto-image" src={currency.iconUrl} />}

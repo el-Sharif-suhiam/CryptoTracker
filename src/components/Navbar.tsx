@@ -31,7 +31,7 @@ function Navbar() {
       <div className="logo-container">
         <Avatar src={logo} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">CryptoTracker</Link>
+          <Link to="/CryptoTracker/">CryptoTracker</Link>
         </Typography.Title>
         <Button
           className="menu-control-container"
@@ -43,13 +43,13 @@ function Navbar() {
       {activeMenu && (
         <Menu theme="dark">
           <Menu.Item key="home" icon={<HomeOutlined />}>
-            <Link to="/">Home</Link>
+            <Link to="/CryptoTracker/">Home</Link>
           </Menu.Item>
           <Menu.Item key="crypto" icon={<FundOutlined />}>
-            <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+            <Link to="/CryptoTracker/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
           <Menu.Item key="news" icon={<BulbOutlined />}>
-            <Link to="/news">News</Link>
+            <Link to="/CryptoTracker/news">News</Link>
           </Menu.Item>
         </Menu>
       )}

@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react";
 import { Line } from "react-chartjs-2";
 import {
   Chart,
@@ -28,9 +27,8 @@ function Livechart({
 
   coinHistory?.data?.history?.forEach((history: any) => {
     coinPrice.push(history.price);
-    const date = new Date(history.timestamp * 1000); // تحويل timestamp من ثوانٍ إلى ميلي ثانية
-    coinTimestamp.push(date.toLocaleDateString("en-US")); // تنسيق التاريخ
-    //coinTimestamp.push(new Date(history.timestamp).toLocaleDateString());
+    const date = new Date(history.timestamp * 1000);
+    coinTimestamp.push(date.toLocaleDateString("en-US"));
   });
 
   const data = {
