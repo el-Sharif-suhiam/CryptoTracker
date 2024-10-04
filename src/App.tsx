@@ -67,12 +67,13 @@ function App() {
               <Link to="#">Contact us</Link>
             </Space>
           </div>
+
           <div className="row">
             <a href="https://github.com/el-Sharif-suhiam">
               <i className="fa fa-github"></i>
             </a>
-            <a href="#">
-              <i className="fa fa-youtube"></i>
+            <a href="mailto:zero_robot77@protonmail.com">
+              <i className="fa fa-envelope"></i>
             </a>
             <a href="#">
               <i className="fa fa-twitter"></i>
