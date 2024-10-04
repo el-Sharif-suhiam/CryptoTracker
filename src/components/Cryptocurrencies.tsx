@@ -17,7 +17,6 @@ function Cryptocurrencies({ simplified }: { simplified?: boolean }) {
     );
     setCoins(filteredData);
   }, [cryptosList, searchTerm]);
-  console.log(cryptosList, isFetching);
   if (isFetching) return <Loading />;
   return (
     <>

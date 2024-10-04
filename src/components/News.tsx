@@ -10,7 +10,6 @@ function News({ simplified }: { simplified?: boolean }) {
     simplified ? 6 : 20
   );
   if (isFetching) return <Loading />;
-  console.log(cryptoNews, isFetching);
   return (
     <Row gutter={[24, 24]}>
       {cryptoNews!.map((news, i) => (
